@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calls | Microsoft Teams</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>const ROOM_ID = "<%= roomId %>"</script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="logo-cover">
+                <button class="menu-btn"><img class='logo' src="menu.png" alt="menu"></button>
+                <div class='logo-text'>Microsoft Teams</div>
+            </div>
+            <div class="search-box-top" >
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <input class="search-bar"  type="text" placeholder="Search" style="font-family:Arial, FontAwesome" />
+            </div>
+            <div class="more-bar">
+                <button class="more"></button>	
+                <div class="display-name"> </div>    
+                <div class="display-pic">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="side-nav">
+                <div class="side-nav-up" >
+                    <button class="btn"><i class="far fa-bell"></i>description</button>
+                    <button class="btn"><i class="far fa-comment-dots"></i>Chat</button>
+                    <button class="btn"><i class="fas fa-users"></i>Teams</button>
+                    <button class="btn"><i class="fas fa-book"></i>Assignments</button>
+                    <button class="btn"><i class="far fa-calendar-alt"></i>Calender</button>
+                    <button class="btn"><i class="fas fa-phone-alt"></i>Calls</button>
+                    <button class="btn"><i class="far fa-file"></i>Files</button>
+                    <button class="btn"><i class="fas fa-poll"></i>Polly</button>
+                    <button class="btn"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+                <div class="side-nav-down">
+                    <button class="btn"><i class="fas fa-shapes"></i>Apps</button>
+                    <button class="btn"><i class="far fa-question-circle"></i>Help</button>
+                </div>
+            </div>
+            <div class="content">
+                <div id="video-grid">
+
+                </div>
+                <div id="chat">
+
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
