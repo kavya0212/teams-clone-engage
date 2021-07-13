@@ -2,10 +2,13 @@
 This is a P2P Teams clone 
 
 ## Heroku link
-This app is hosted on heroku.
+This app is hosted on heroku as it is **best viewed** there
 https://teams-clone-kavyasri.herokuapp.com
 
-### Running this web app
+## Features
+- Video Call
+
+### Running this web app 
 - open the project containing folder in a terminal. 
 - type '**npm i**' to install the dependencies
 - after successfully installing dependencies, type '**npm start**'
